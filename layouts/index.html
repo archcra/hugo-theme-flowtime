@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+        {{ range .Site.Sections }}
+        <div class="ft-section" data-id={{ .Section }}>
+            {{ .Render "section" }}
+        </div>
+        {{ end -}}
+
+{{ end }}
+

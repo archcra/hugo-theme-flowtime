@@ -1,0 +1,14 @@
+{{ $section := .Section }}
+
+{{ range (where .Site.RegularPages.ByTitle "Section" $section ) }}
+
+<div class="ft-page">
+  <div class="stack-center">
+    <div class="stacked-center">
+
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+{{ end }}
